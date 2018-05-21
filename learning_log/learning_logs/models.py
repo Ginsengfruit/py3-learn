@@ -12,8 +12,8 @@ class Entry(models.Model):
     text=models.TextField()
     date_added=models.DateTimeField(auto_now_add=True)
     
-    class meta:
+    class Meta:
         verbose_name_plural='entries'
     
     def __str__(self):
-        return sef.text[:50]+"..."
+        return self.text[:50]+"..."
